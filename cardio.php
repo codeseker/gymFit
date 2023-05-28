@@ -1,3 +1,11 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "gym";
+
+$connect = mysqli_connect($servername, $username, $password, $dbname);
+?>
 <!doctype html>
 <html lang="en">
 
@@ -16,9 +24,16 @@
             <img src="./images/cardio.jpg" class="w-100 my-3 px-4" alt="">
         </div>
         <div class="my-4 text-center px-3">
-            <p>If you are hoping to add variety and challenge to your home workout routine, the cardio exercises in this article are an efficient way to boost the intensity of your workouts. Powerful, explosive movements are a fantastic choice when using bodyweight to get a great cardio workout.
+        <?php
+            $sql = "select description from exercises where type = 'cardio';";
+            $result = mysqli_query($connect, $sql);
 
-                The following movements can be done at your own pace, depending on your fitness level and your training goals. They don't make up a single workout; instead, add a few of these exercises to the end of your regular cardio workout, or incorporate them into a circuit training workout to add intensity and mix things up. Here are some exercises to consider.</p>
+            while ($row = mysqli_fetch_assoc($result)) {
+                $desc = $row['description'];
+                echo "<p> $desc
+      </p>";
+            }
+            ?>
             </div>
             <ul>
                 <li>

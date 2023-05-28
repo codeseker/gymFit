@@ -1,3 +1,11 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "gym";
+
+$connect = mysqli_connect($servername, $username, $password, $dbname);
+?>
 <!doctype html>
 <html lang="en">
 
@@ -16,19 +24,16 @@
             <img src="./images/blog-1.jpg" class="w-100 my-3 px-4" alt="">
         </div>
         <div class="my-4 text-center px-3">
-            <p>Building muscles is all about spending hours at the gym, right? The only true way to build a chiseled, muscular physique is hours upon hours of slaving away over rusty iron, day after day, year after year.
+        <?php
+            $sql = "select description from exercises where type = 'fullBody';";
+            $result = mysqli_query($connect, $sql);
 
-                Well, maybe not.
-                
-                Yes, hard work is still needed. Like anything in life, you get out of your workouts what you put in. However, you don't have to train on a split system four or more days each week to see gains. The full-body workout can help you progress and is easy to fit into your schedule.
-                
-                If you're finding it simply too hard to stick to a workout plan, why not try a full-body workout program? The idea of working your whole body in one training session has gotten stereotyped.
-                
-                Many people picture a lightweight circuit workout designed so that the trainee is hopping from machine to machine, while in between workouts, he's reading up on the latest celebrity gossip.
-                
-                A real full-body workout performed by an athlete with a goal in mind induces maximal muscle contraction with heavy weights, allows for full recovery so you can grow and still train hard, and prevents the inevitable burnout caused by overtraining.
-                
-                Let's find out some full-body workouts.</p>
+            while ($row = mysqli_fetch_assoc($result)) {
+                $desc = $row['description'];
+                echo "<p> $desc
+      </p>";
+            }
+            ?>
             </div>
             <p>Back</p>
             <ul>

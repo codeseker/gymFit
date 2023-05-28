@@ -1,3 +1,11 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "gym";
+
+$connect = mysqli_connect($servername, $username, $password, $dbname);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,8 +40,8 @@
             <a href="#about">about</a>
             <a href="#features">features</a>
             <a href="#blogs">blogs</a>
-            <a href="#login">login</a>
-            <a href="#singup">signup</a>
+            <a href="./login.php">login</a>
+            <a href="./register.php">signup</a>
         </nav>
 
     </header>
@@ -273,7 +281,7 @@
                         <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21st nov, 2022</a> </div>
                         <h3>back workout</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
-                        <a href="/back.html" class="btn">read more</a>
+                        <a href="./back.php" class="btn">read more</a>
                     </div>
                 </div>
 
@@ -285,7 +293,7 @@
                         <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21st nov, 2022</a> </div>
                         <h3>Cardio Workout</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
-                        <a href="/cardio.html" class="btn">read more</a>
+                        <a href="./cardio.php" class="btn">read more</a>
                     </div>
                 </div>
 
@@ -297,7 +305,7 @@
                         <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21st nov, 2022</a> </div>
                         <h3>Biceps Workout</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
-                        <a href="/biceps.html" class="btn">read more</a>
+                        <a href="./biceps.php" class="btn">read more</a>
                     </div>
                 </div>
 
@@ -309,7 +317,7 @@
                         <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21st nov, 2022</a> </div>
                         <h3>Legs Workout</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
-                        <a href="/legs.html" class="btn">read more</a>
+                        <a href="./legs.php" class="btn">read more</a>
                     </div>
                 </div>
 
@@ -321,7 +329,7 @@
                         <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21st nov, 2022</a> </div>
                         <h3>Full Body Workout</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
-                        <a href="/fullBody.html" class="btn">read more</a>
+                        <a href="./fullBody.php" class="btn">read more</a>
                     </div>
                 </div>
 
