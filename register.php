@@ -79,124 +79,107 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <html>
 
 <head>
-    <title>GymFit | Signup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymFit | Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+        .login-dark {
+            height: 100vh;
+            background: #475d62;
+            background-size: cover;
+            position: relative;
         }
 
-        .container {
-            width: 350px;
-            margin: 0 auto;
-            margin-top: 100px;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 30px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: #555;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-        }
-
-        .form-group button {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            border: none;
+        .login-dark form {
+            max-width: 320px;
+            width: 90%;
+            background-color: #1e2833;
+            padding: 40px;
+            border-radius: 4px;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
             color: #fff;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: background-color 0.3s;
+            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
         }
 
-        .form-group button:hover {
-            background-color: #45a049;
+        .login-dark .illustration {
+            text-align: center;
+            padding: 15px 0 20px;
+            font-size: 100px;
+            color: #2980ef;
         }
 
-        .form-group button:focus {
+        .login-dark form .form-control {
+            background: none;
+            border: none;
+            border-bottom: 1px solid #434a52;
+            border-radius: 0;
+            box-shadow: none;
+            outline: none;
+            color: inherit;
+        }
+
+        .login-dark form .btn-primary {
+            background: #214a80;
+            border: none;
+            border-radius: 4px;
+            padding: 11px;
+            box-shadow: none;
+            margin-top: 26px;
+            text-shadow: none;
             outline: none;
         }
 
-        .form-group .login-link {
-            text-align: center;
-            margin-top: 20px;
+        .login-dark form .btn-primary:hover,
+        .login-dark form .btn-primary:active {
+            background: #214a80;
+            outline: none;
         }
 
-        .form-group .login-link a {
-            color: #333;
+        .login-dark form .forgot {
+            display: block;
+            text-align: center;
+            font-size: 12px;
+            color: #6f7a85;
+            opacity: 0.9;
             text-decoration: none;
-            font-weight: bold;
         }
 
-        .form-group .login-link a:hover {
-            text-decoration: underline;
+        .login-dark form .forgot:hover,
+        .login-dark form .forgot:active {
+            opacity: 1;
+            text-decoration: none;
         }
 
-        .travel-image {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        .travel-info {
-            text-align: center;
-            font-size: 14px;
-            color: #777;
+        .login-dark form .btn-primary:active {
+            transform: translateY(1px);
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <img class="travel-image" src="https://source.unsplash.com/random/30x30?travel" alt="Travel Image">
-        <h2>Signup</h2>
-        <form method="POST">
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username">
+    <div class="login-dark">
+        <form method="post">
+            <h2 class="sr-only">Register Yourself</h2>
+            <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+            <div class="form-group"><input class="form-control" type="text" name="username"
+                    placeholder="Enter username"></div>
+            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password">
             </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password">
+            <div class="form-group"><input class="form-control" type="password" name="confirm_password"
+                    placeholder="Confirm Password">
             </div>
-            <div class="form-group">
-                <label for="password">Confirm Password</label>
-                <input type="password" id="password" name="confirm_password" placeholder="Enter your password">
-            </div>
-            <div class="form-group">
-                <button type="submit">Signup</button>
-            </div>
-            <div class="form-group login-link">
-                <span>Already have an account? </span><a href="#">Login</a>
-            </div>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Register</button></div><a
+                href="./login.php" class="forgot">Already a Member?</a>
         </form>
-        <p class="travel-info">Experience the wonders of the world with Tour and Travel! Sign up today to unlock
-            exclusive travel deals and create unforgettable memories.</p>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

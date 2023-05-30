@@ -1,3 +1,11 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "gym";
+
+$connect = mysqli_connect($servername, $username, $password, $dbname);
+?>
 <!doctype html>
 <html lang="en">
 
@@ -16,7 +24,7 @@
             <img src="./images/legs_workout.jpg" class="w-100 my-3 px-4" alt="">
         </div>
         <div class="my-4 text-center px-3">
-        <?php
+            <?php
             $sql = "select description from exercises where type = 'legs';";
             $result = mysqli_query($connect, $sql);
 

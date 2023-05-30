@@ -42,6 +42,7 @@ $connect = mysqli_connect($servername, $username, $password, $dbname);
             <a href="#blogs">blogs</a>
             <a href="./login.php">login</a>
             <a href="./register.php">signup</a>
+            <a href="./logout.php">logout</a>
         </nav>
 
     </header>
@@ -101,25 +102,23 @@ $connect = mysqli_connect($servername, $username, $password, $dbname);
         <div class="content">
             <span>about us</span>
             <h3 class="title">Every day is a chance to become better</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quia accusamus dicta inventore nobis
-                obcaecati vero odio, id dolorum. Consequatur ex, aperiam deserunt nostrum perferendis illum unde ipsa?
-                Consequatur, distinctio?</p>
+            <p>Every day offers an opportunity for personal growth and improvement. By embracing each day with a positive mindset, we can strive to make progress, learn from our experiences, and become the best version of ourselves. With determination and a commitment to self-improvement, we can seize the potential of each new day and continue on the path of continuous growth.</p>
             <div class="box-container">
                 <div class="box">
                     <h3><i class="fas fa-check"></i>body and mind</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                    <p>The body and mind intertwine, shaping our existence.</p>
                 </div>
                 <div class="box">
                     <h3><i class="fas fa-check"></i>healthy life</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                    <p>Nurturing body and mind, a healthy life thrives.</p>
                 </div>
                 <div class="box">
                     <h3><i class="fas fa-check"></i>strategies</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                    <p>Effective strategies empower success in various endeavors.</p>
                 </div>
                 <div class="box">
                     <h3><i class="fas fa-check"></i>workout</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                    <p>Regular workout fuels vitality and strength.</p>
                 </div>
             </div>
             <a href="#" class="btn">read more</a>
@@ -144,7 +143,7 @@ $connect = mysqli_connect($servername, $username, $password, $dbname);
                 <div class="content">
                     <img src="images/icon-1.png" alt="">
                     <h3>body building</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                    <p>Bodybuilding cultivates muscular strength and sculpted physique through targeted training and nutrition.</p>
                     <a href="#" class="btn">read more</a>
                 </div>
             </div>
@@ -156,7 +155,7 @@ $connect = mysqli_connect($servername, $username, $password, $dbname);
                 <div class="content">
                     <img src="images/icon-2.png" alt="">
                     <h3>workouts for men</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                    <p>Effective workouts for men enhance strength, stamina, and overall fitness.</p>
                     <a href="#" class="btn">read more</a>
                 </div>
             </div>
@@ -168,7 +167,7 @@ $connect = mysqli_connect($servername, $username, $password, $dbname);
                 <div class="content">
                     <img src="images/icon-3.png" alt="">
                     <h3>workouts for women</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                    <p>Targeted workouts for women enhance strength, flexibility, and overall fitness, empowering their unique fitness goals and needs.</p>
                     <a href="#" class="btn">read more</a>
                 </div>
             </div>
@@ -183,8 +182,7 @@ $connect = mysqli_connect($servername, $username, $password, $dbname);
     <section class="banner">
 
         <span>join us now</span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto nesciunt aut sapiente quis
-            inventore quam vitae quod illum incidunt.</p>
+        <p>Join us now and unlock a world of possibilities.</p>
         <a href="#" class="btn">Enroll Now</a>
 
     </section>
@@ -198,9 +196,7 @@ $connect = mysqli_connect($servername, $username, $password, $dbname);
         <div class="information">
             <span>testimonials</span>
             <h3>what our clients says</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas praesentium asperiores fugiat,
-                excepturi odit obcaecati a voluptatibus earum quisquam?</p>
-            <a href="#" class="btn">read more</a>
+            <p>Our clients rave about the transformative experiences and exceptional service they receive.</p>
         </div>
 
         <div class="swiper review-slider">
@@ -208,24 +204,24 @@ $connect = mysqli_connect($servername, $username, $password, $dbname);
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide slide">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
+                    <p>I've achieved remarkable results in a short time, thanks to the personalized workout plans.</p>
                     <div class="user">
                         <img src="images/pic-1.png" alt="">
                         <div class="info">
                             <h3>aryan mittal</h3>
-                            <span>designer</span>
+                            <span>Developer</span>
                         </div>
                         <i class="fas fa-quote-left"></i>
                     </div>
                 </div>
 
                 <div class="swiper-slide slide">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
+                    <p>I've achieved remarkable results in a short time, thanks to the personalized workout plans.</p>
                     <div class="user">
-                        <img src="images/pic-2.png" alt="">
+                        <img src="images/pic-1.png" alt="">
                         <div class="info">
                             <h3>ayush jangid</h3>
-                            <span>designer</span>
+                            <span>Developer</span>
                         </div>
                         <i class="fas fa-quote-left"></i>
                     </div>
@@ -361,25 +357,14 @@ $connect = mysqli_connect($servername, $username, $password, $dbname);
 
             <div class="box">
                 <h3>opening hours</h3>
-                <p> monday : <i> 7:00am - 10:30pm </i> </p>
-                <p> tuesday : <i> 7:00am - 10:30pm </i> </p>
-                <p> wednesday : <i> 7:00am - 10:30pm </i> </p>
-                <p> friday : <i> 7:00am - 10:30pm </i> </p>
-                <p> saturday : <i> 7:00am - 10:30pm </i> </p>
-                <p> sunday : <i> closed </i> </p>
-            </div>
-
-            <div class="box">
-                <h3>opening hours</h3>
-                <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
-                <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
-                <p> <i class="fas fa-envelope"></i> dummy@gmail.com </p>
-                <p> <i class="fas fa-map"></i> jaipur, india - 400104 </p>
+                <p> <i class="fas fa-phone"></i> +91 9887153864 </p>
+                <p> <i class="fas fa-phone"></i> +91 9145845453 </p>
+                <p> <i class="fas fa-envelope"></i> support.gymfit@gmail.com </p>
+                <p> <i class="fas fa-map"></i> jaipur, india - 302022 </p>
                 <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
-                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="https://www.linkedin.com/in/ayushjangid/" class="fab fa-facebook-f"></a>
+                    <a href="https://www.linkedin.com/in/ayushjangid/" class="fab fa-twitter"></a>
+                    <a href="https://www.linkedin.com/in/ayushjangid/" class="fab fa-linkedin"></a>
                 </div>
             </div>
 
