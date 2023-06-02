@@ -156,7 +156,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password">
             </div>
             <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div><a
-                href="#" class="forgot">Forgot your email or password?</a>
+                href="./register.php" class="forgot">Don't have an account?</a>
         </form>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

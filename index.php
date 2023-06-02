@@ -276,7 +276,7 @@ $connect = mysqli_connect($servername, $username, $password, $dbname);
                     <div class="content">
                         <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21st nov, 2022</a> </div>
                         <h3>back workout</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                        <p>Back workout: rows, pull-ups, deadlifts, strength.</p>
                         <a href="./back.php" class="btn">read more</a>
                     </div>
                 </div>
@@ -288,7 +288,7 @@ $connect = mysqli_connect($servername, $username, $password, $dbname);
                     <div class="content">
                         <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21st nov, 2022</a> </div>
                         <h3>Cardio Workout</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                        <p>Heart-pumping cardio: endurance, sweat.</p>
                         <a href="./cardio.php" class="btn">read more</a>
                     </div>
                 </div>
@@ -300,7 +300,7 @@ $connect = mysqli_connect($servername, $username, $password, $dbname);
                     <div class="content">
                         <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21st nov, 2022</a> </div>
                         <h3>Biceps Workout</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                        <p>Bulging peaks, arm flexion, biceps showcase.</p>
                         <a href="./biceps.php" class="btn">read more</a>
                     </div>
                 </div>
@@ -312,7 +312,7 @@ $connect = mysqli_connect($servername, $username, $password, $dbname);
                     <div class="content">
                         <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21st nov, 2022</a> </div>
                         <h3>Legs Workout</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                        <p>Leg Day: Squat, lunge, deadlift, power.</p>
                         <a href="./legs.php" class="btn">read more</a>
                     </div>
                 </div>
@@ -324,7 +324,7 @@ $connect = mysqli_connect($servername, $username, $password, $dbname);
                     <div class="content">
                         <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21st nov, 2022</a> </div>
                         <h3>Full Body Workout</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                        <p>compound exercises, strength, balance.</p>
                         <a href="./fullBody.php" class="btn">read more</a>
                     </div>
                 </div>
